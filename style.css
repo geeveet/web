@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #652f2f;
+    background-image: url(img/snazzy-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  
+    color: rgb(255, 255, 255);
+    font-family: "montserrat", sans-serif;
+}
+
+/* 
+
+--------Dazzle Unicase Thin
+font-family: "dazzle-unicase", sans-serif;
+font-weight: 200;
+font-style: normal;
+
+--------Dazzle Unicase Light
+font-family: "dazzle-unicase", sans-serif;
+font-weight: 300;
+font-style: normal;
+
+--------Dazzle Unicase Medium
+font-family: "dazzle-unicase", sans-serif;
+font-weight: 500;
+font-style: normal;
+
+--------Dazzle Unicase Bold
+font-family: "dazzle-unicase", sans-serif;
+font-weight: 700;
+font-style: normal;
+
+*/
+
+header {
+  height: 70px;
+  background-color: #fff;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  box-shadow: 0px 13px 31px 1px rgba(0,0,0,0.1);
+}
+
+
+
+.logo{
+    width: 150px;
+    margin: 16px 30px;
+
+}
+
+.icono_inicio{
+    margin: 70px auto 0;
+    display: flex;
+}
+
+.barramenu{
+  height: 100%;
+  width: 220px;
+  background-color: white;
+  position: fixed;
+}
+
+.botonesmenu{
+  height: 70px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  line-height: 70px;
+  color: #1F2F50;
+  margin-bottom: 20px;
+}
+
+.botonesmenu svg{
+  margin: auto 20px auto 30px;
+  fill: #1E2F50;
+}
+
+
+.botonesmenu:hover{
+  color: #718FC6;
+  fill: #718FC6;
+  cursor: pointer;
+}
+
+.botonesmenu:active{
+  background-color: #1F2F50;
+  color: white;
+  fill: #ffffff;
+ }
+
+.botonesmenu H3{
+  font-size: 14PX;
+  font-weight: 600;
+}
+
+
+header input[type=text] {
+  padding: 6px 0 6px 10px;
+  width: 40%;
+  height: 25px;
+  border: none;
+  margin: auto auto;
+  font-size: 16px;
+  border-style: solid;
+  border-color: rgb(31, 48, 81);
+  border-radius: 10px;
+}
+
+.dropbtn {
+  background-color: #ffffff;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn img{
+  height: 33px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right:0px;
+  background-color: #ffffff;
+  min-width: 170px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+ 
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ffffff;
+}
+
+
+
+.voluntariat_proper{
+  max-height: 80%; 
+  min-height: 300px;
+  width: 430px;
+  background-color: #E3EAF8;
+  border-radius: 10px;
+  position: fixed;
+  overflow-y: auto;
+  overflow-x:hidden;
+}
+
+.content{
+  height: 1020px;
+  padding: 30px;
+  color: #1F2F50;
+  margin-left: 220px;
+}
+
+
+.voluntariat_proper h2{
+  font-size: 25px;
+  margin-top: 30px;
+  color: #1E2F50;
+  font-family: "montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.nom_entitat{
+  margin-top: 20px;
+  color: #1E2F50;
+  font-size: 20px;
+  font-family: "montserrat", sans-serif;
+  font-weight: 600;
+  text-decoration: underline;
+  font-style: normal;
+}
+
+.sub_data{
+  margin-top: 20px;
+  color: #1E2F50;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.titol_volu{
+  margin-top: 20px;
+  color: #1E2F50;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.desc_volu{
+  margin-top: 6px;
+  color: #1E2F50;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.voluntariat_proper img{
+    border-radius: 10px;
+}
+
+.foto_voluntari{
+  width: 370px;
+  margin-top: 20px;
+}
+
+.foto_valoracio{
+  width: 170px;
+  margin-top: 6px;
+}
+
+.puntspositius{
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.categoria{
+  width: 150px;
+  height: 25px;
+  background-color: white;
+  border-color: #1E2F50;
+  border-style: solid;
+  margin: 10px 20px auto auto;
+  display:inline-block;
+  border-radius: 10px;
+}
+
+.categoria p{
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0px auto;
+  font-weight: bold;
+}
+
+.inscribir{
+  width: 290px;
+  height: 45px;
+  background-color: #1E2F50;
+  margin: 10px auto;
+  border-radius: 10px;
+  color: white;
+}
+
+.inscribir.primero{
+  margin: 100px auto 10px;
+}
+
+.inscribir p{
+  font-size: 14px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0px auto;
+  font-weight: bold;
+}
+
+.voluntariat_proper::-webkit-scrollbar {
+  width: 8px; 
+  scroll-behavior: smooth;
+}
+.voluntariat_proper::-webkit-scrollbar-track {
+  background: white; 
+  border-radius: 10px;
+  scroll-behavior: smooth;
+}
+
+.voluntariat_proper::-webkit-scrollbar-thumb {
+  background: #B7C5E7; 
+  border-radius: 10px;
+  scroll-behavior: smooth;
+}
+
+.contingut_volun_proper{
+  margin: 0px 30px 30px 30px;
+}
+
+.search-container {
+  position: relative; 
+  flex-grow: 1; 
+  display: flex;
+  justify-content: center; 
+}
+
+.search-container input {
+  padding: 6px;
+  width: 40%;
+  height: 30px;
+  border: none;
+  font-size: 17px;
+  border-style: solid;
+  border-color: rgb(31, 48, 81);
+  border-radius: 10px;
+}
+
+.search-results {
+  display: none; 
+  position: absolute;
+  top: 40px; 
+  left: 50%;
+  transform: translateX(-50%); 
+  width: 40%;
+  text-decoration: none;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.search-results p {
+  padding: 10px;
+  margin: 0;
+  color: #1E2F50;
+  cursor: pointer;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.search-results a{
+  text-decoration: none;
+}
+
+.search-results p:hover {
+  background-color: #f1f1f1;
+}
+
