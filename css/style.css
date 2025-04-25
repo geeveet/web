@@ -5,7 +5,7 @@
 
 body{
     background-color: #652f2f;
-    background-image: url(img/snazzy-image.png);
+    background-image: url(../img/snazzy-image.png);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -113,59 +113,6 @@ header input[type=text] {
   border-radius: 10px;
 }
 
-.dropbtn {
-  background-color: #ffffff;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropbtn img{
-  height: 33px;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  right:0px;
-  background-color: #ffffff;
-  min-width: 170px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
- 
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-
-.dropdown:hover .dropdown-content{
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #ffffff;
-}
-
-
 
 .voluntariat_proper{
   max-height: 80%; 
@@ -210,6 +157,24 @@ header input[type=text] {
   color: #1E2F50;
   font-size: 20px;
   font-weight: 400;
+}
+
+.titol_info{
+  font-size: 25px;
+  margin-top: 200px;
+  color: #1E2F50;
+  font-family: "montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+}
+
+.sub_info{
+  margin-top: 20px;
+  color: #1E2F50;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
 }
 
 .titol_volu{
@@ -307,6 +272,10 @@ header input[type=text] {
   margin: 0px 30px 30px 30px;
 }
 
+.contingut_info{
+  margin: 80px 30px 30px 30px;
+}
+
 .search-container {
   position: relative; 
   flex-grow: 1; 
@@ -357,3 +326,38 @@ header input[type=text] {
   background-color: #f1f1f1;
 }
 
+
+
+.givit{
+  position: fixed;
+  height: 45px;
+  transition: height 0.2s ease;
+}
+
+
+.one{
+  left: 990px;
+    top: 200px;
+}
+
+.two{
+  left: 840px;
+    top: 400px;
+}
+
+.three{
+  left: 1230px;
+  top: 380px;
+}
+
+.four{
+  left: 1690px;
+  top: 500px;
+}
+
+.givit.activa {
+  height: 55px;
+}
+.givit:hover {
+  height: 55px;
+}
