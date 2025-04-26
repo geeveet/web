@@ -65,6 +65,7 @@ header {
   width: 220px;
   background-color: white;
   position: fixed;
+  z-index: 1000;
 }
 
 .botonesmenu{
@@ -77,13 +78,33 @@ header {
   margin-bottom: 20px;
 }
 
+.botonesmenu_inac{
+  height: 70px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  line-height: 70px;
+  color: #E3EAF8; /* <-- color del texto */
+  margin-bottom: 20px;
+}
+
 .botonesmenu svg{
   margin: auto 20px auto 30px;
   fill: #1E2F50;
 }
 
+.botonesmenu_inac svg{
+  margin: auto 20px auto 30px;
+  fill: #E3EAF8; /* <-- color del icono */
+}
 
 .botonesmenu:hover{
+  color: #718FC6;
+  fill: #718FC6;
+  cursor: pointer;
+}
+
+.botonesmenu_inac:hover {
   color: #718FC6;
   fill: #718FC6;
   cursor: pointer;
@@ -95,7 +116,18 @@ header {
   fill: #ffffff;
  }
 
+ .botonesmenu_inac:active {
+  background-color: #1F2F50;
+  color: white;
+  fill: #ffffff;
+}
+
 .botonesmenu H3{
+  font-size: 14PX;
+  font-weight: 600;
+}
+
+.botonesmenu_inac H3{
   font-size: 14PX;
   font-weight: 600;
 }
@@ -115,14 +147,45 @@ header input[type=text] {
 
 
 .voluntariat_proper{
-  max-height: 80%; 
-  min-height: 300px;
+  height: 840px;
+  max-height: 840px;
+  min-height: 840px;
   width: 430px;
   background-color: #E3EAF8;
   border-radius: 10px;
   position: fixed;
+  top: 80px; /* justo debajo de la barra */
+  left: 280px; /* justo al lado de la barra */
+  opacity: 0;
+  transform: translateX(-100%); /* animación para entrar desde la izquierda */
+  transition: transform 0.5s ease, opacity 0.5s ease;
   overflow-y: auto;
-  overflow-x:hidden;
+  overflow-x: hidden;
+  pointer-events: none;
+  z-index: 500;
+}
+
+
+.voluntariat_proper.active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.voluntariat_proper.mostrar {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #1E2F50;
+  cursor: pointer;
 }
 
 .content{
@@ -170,10 +233,10 @@ header input[type=text] {
 }
 
 .sub_info{
-  margin-top: 20px;
+  margin-top: 47px;
   color: #1E2F50;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 300;
   text-align: center;
 }
 
@@ -245,7 +308,7 @@ header input[type=text] {
 }
 
 .inscribir p{
-  font-size: 14px;
+  font-size: 12px;
   line-height: 45px;
   text-align: center;
   margin: 0px auto;
@@ -360,4 +423,11 @@ header input[type=text] {
 }
 .givit:hover {
   height: 55px;
+}
+
+
+.icono_gracias{
+  display: block;
+  margin: 60px auto; 
+  max-width: 100px;
 }
