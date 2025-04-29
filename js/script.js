@@ -27,3 +27,16 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   });
+
+  
+  const botones = document.querySelectorAll('.botonesmenu');
+
+// Recorre cada botón y le agrega un evento de clic
+botones.forEach(boton => {
+  boton.addEventListener('click', () => {
+    // Elimina la clase 'active' de todos los botones
+    botones.forEach(b => b.classList.remove('active'));
+    // Añade 'active' solo al botón que fue clicado
+    boton.classList.add('active');
+  });
+});

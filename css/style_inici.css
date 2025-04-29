@@ -12,7 +12,7 @@
   
   .configurar_perfil {
     height: 100vh;
-    width: 50%;
+    width: 56%;
     min-width: 800px;
     margin: 0 auto;
     background-color: #E3EAF8;
@@ -102,3 +102,216 @@
     font-size: 0.9rem;
   }
   
+
+
+
+
+
+  .formulario_voluntario {
+    width: 533px;
+    height: 50px;
+    background-color: #fff;
+    margin: 6px auto;
+    border-radius: 15px;
+    display: flex;
+    border-color: #1E2F50;
+    border-style: solid;
+  }
+
+.formulario_voluntario p{
+    margin: auto 20px;
+    opacity: 60%;
+    color: #B5B5B5;
+}
+
+
+.formulario_registro_app{
+    width: 533px;
+    height: 50px;
+    background-color: #fff;
+    margin: 18px auto;
+    border-radius: 15px;
+    display:flex;
+    border-color: #1E2F50;
+    border-style: solid;
+}
+
+.formulario_registro_app p{
+  margin: auto auto;
+  text-align: center;
+  opacity: 100%;
+}
+
+.questionari_voluntari{
+  margin-top: 44px;
+}
+
+.questionari_voluntari h2{
+  text-align: left;
+  margin: 18px 18px 0;
+  font-family: "montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 17px;
+  color: #1E2F50;
+}
+
+.seleccionauno {
+  font-family: "montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 26px;
+  text-align: center;
+}
+
+.seguent{
+  background-color: white;
+  padding: 17px;
+  width: 180px;
+  position: absolute;
+  bottom: 107px;
+  right: 137px;
+  text-align: center;
+  color: #1E2F50;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 15px;
+  border-color: #1E2F50;
+  border-style: solid;
+}
+
+.seguent:hover{
+  background-color: #1E2F50;
+  color:white;
+}
+
+.enrere{
+  background-color: white;
+  width: 180px;
+  padding: 17px;
+  position: absolute;
+  bottom: 107px;
+  left: 139px;
+  color: #1E2F50;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 15px;
+  border-color: #1E2F50;
+  border-style: solid;
+}
+
+.enrere:hover{
+  background-color: #1E2F50;
+  color:white;
+}
+
+
+.questionari_voluntari_crea{
+  margin-top: 0px;
+  display: flex;
+  gap: 34px;
+}
+
+.questionari_voluntari_crea h2{
+  text-align: left;
+  margin: 18px  0 auto 18px;
+  font-family: "montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 17px;
+  color: #1E2F50;
+}
+
+.formulario_voluntario_pregunta {
+  width: 355px;
+  height: 50px;
+  background-color: #fff;
+  margin: 6px auto;
+  border-radius: 15px;
+  display: flex;
+  border-color: #1E2F50;
+  border-style: solid;
+}
+
+.formulario_voluntario_pregunta p{
+  margin:12px 10px 0 20px;
+  opacity: 60%;
+  color: #B5B5B5;
+}
+
+.formulario_voluntario_foto{
+  width: 355px;
+  height: 180px;
+  background-color: #fff;
+  margin: 6px 0px 18px 0px;
+  border-radius: 15px;
+  fill: #1E2F50;
+  display:flex;
+  border-color: #1E2F50;
+  border-style: solid;
+}
+
+.formulario_voluntario_foto svg{
+  margin: 15px 20px;
+  fill: #1E2F50;
+}
+
+.questionari_voluntari .texto_foto{
+  text-align: left;
+  margin: 0px 0px 0px 50px;
+}
+
+.categoria {
+  width: 170px;
+  height: 45px;
+  background-color: white;
+  border-color: #1E2F50;
+  border-style: solid;
+  margin:0px 0px 0px 0px;
+  display: inline-block;
+  border-radius: 15px;
+  border-width: 2px;
+  color: #1E2F50;
+}
+
+.categoria h5 {
+  font-size: 12px;
+  line-height: 10px;
+  text-align: center;
+  font-family: "montserrat", sans-serif;
+  margin: 16px auto;
+  font-weight: bold;
+}
+
+.contenidor_categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 6px;
+  max-width: 355px;
+}
+
+.textarea_motivo {
+  min-height: 100px;
+  width: 100%; 
+  line-height: 1.5;
+  
+}
+
+
+.emplena_formulari_moti{
+  font-family: "montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 17px;
+  color: #1E2F50;
+  text-align: left;
+  align-self: flex-start;
+  margin: 18px 0pxs 0px 18px;
+}
+
+.contenidor_motiu{
+  width: 740px;
+  margin: 0 auto;
+}
