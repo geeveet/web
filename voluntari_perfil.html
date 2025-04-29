@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICI WEB</title>
+    <link rel="stylesheet" href="css/stylealtres.css">
+
+    <!-- FONTS UTILITZADES -->
+
+    <!-- DAZZLE UNICASE -->
+    <link rel="stylesheet" href="https://use.typekit.net/fok2dtg.css">
+
+    <!-- MONTSERRAT -->
+    <link rel="stylesheet" href="https://use.typekit.net/fok2dtg.css">
+
+    <!-- --------------------- -->
+</head>
+ 
+
+<body>
+
+    <header>
+        <a href="paginaprincipal.html"><img class="logo" src="img/logo_geeveet.png"></a>  
+    
+        <div class="search-container">
+            <input type="text" id="searchBox" placeholder="Buscar..." onclick="mostrarResultados()">
+            <div class="search-results" id="searchResults">
+                <a href=""><p>Fes companyia a gent gran</p></a>
+                <a href=""><p>Fem repàs per les PAU</p></a>
+                <a href=""><p>Ajuda amb cursos de català</p></a>
+                <a href=""><p>Fes classes de Zumba</p></a>
+                <a href=""><p>Acompanya a gent amb discapacitat</p></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="barramenu">
+        <a href="voluntari_feed.html">
+            <div class="botonesmenu">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Dimensions" width="34" height="30" viewBox="0 0 34 30"><defs><style>.cls-1{fill:currentColor;}</style></defs><g id="Grupo_1009"><circle id="Elipse_341" class="cls-1" cx="3" cy="3" r="3"/><circle id="Elipse_342" class="cls-1" cx="3" cy="27" r="3"/><circle id="Elipse_343" class="cls-1" cx="3" cy="15" r="3"/><path id="Rectángulo_1749" class="cls-1" d="M11.5,1.5h21c.83,0,1.5.67,1.5,1.5h0c0,.83-.67,1.5-1.5,1.5H11.5c-.83,0-1.5-.67-1.5-1.5h0c0-.83.67-1.5,1.5-1.5Z"/><path id="Rectángulo_1750" class="cls-1" d="M11.5,25.5h21c.83,0,1.5.67,1.5,1.5h0c0,.83-.67,1.5-1.5,1.5H11.5c-.83,0-1.5-.67-1.5-1.5h0c0-.83.67-1.5,1.5-1.5Z"/><path id="Rectángulo_1751" class="cls-1" d="M11.5,13.5h21c.83,0,1.5.67,1.5,1.5h0c0,.83-.67,1.5-1.5,1.5H11.5c-.83,0-1.5-.67-1.5-1.5h0c0-.83.67-1.5,1.5-1.5Z"/></g></svg>
+                <h3>FEED</h3>
+            </div>
+        </a>
+
+        <a href="voluntari_preferits.html">
+            <div class="botonesmenu">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Dimensions" width="33.85" height="30" viewBox="0 0 33.85 30"><defs><style>.cls-1{fill:currentColor;fill-rule:evenodd;}</style></defs><path id="Heart" class="cls-1" d="M31.14,2.72c-3.55-3.59-9.33-3.63-12.92-.08-.03.03-.05.05-.08.08l-1.28,1.28-1.28-1.28C11.92-.81,6.1-.7,2.57,2.96-.86,6.52-.86,12.16,2.57,15.72l14.28,14.28,14.28-14.28c3.59-3.54,3.63-9.33.08-12.92-.03-.03-.06-.06-.08-.08"/></svg>
+
+                <h3>PREFERITS</h3>
+            </div>
+        </a>
+
+        <a href="voluntari_notificacions.html">
+            <div class="botonesmenu">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Dimensions" width="29.92" height="30" viewBox="0 0 29.92 30"><defs><style>.cls-1{fill:currentColor;fill-rule:evenodd;}</style></defs><path id="Trazado_740" class="cls-1" d="M28.1,26.24h-9.4c0,2.08-1.68,3.76-3.76,3.76s-3.76-1.68-3.76-3.76H1.78c-.79-.02-1.48-.55-1.7-1.31-.22-.74,0-1.54.57-2.06,1.89-1.41,3-3.63,3.01-5.98v-5.61C3.66,5.05,8.71,0,14.94,0c6.23,0,11.28,5.05,11.28,11.28v5.61c0,2.36,1.12,4.57,3.01,5.98.63.48.86,1.32.56,2.06-.22.76-.9,1.29-1.69,1.31Z"/></svg>
+                <h3>NOTIFICACIONS</h3>
+            </div>
+        </a>
+
+        <a href="voluntari_perfil.html">
+            <div class="botonesmenu active">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Dimensions" width="30" height="30" viewBox="0 0 30 30"><defs><style>.cls-1{fill:currentColor;}</style></defs><path id="Unión_71" class="cls-1" d="M0,30v-3.75c0-4.13,6.75-7.5,15-7.5s15,3.37,15,7.5v3.75H0ZM7.5,7.5C7.5,3.36,10.86,0,15,0s7.5,3.36,7.5,7.5-3.36,7.5-7.5,7.5-7.5-3.36-7.5-7.5Z"/></svg>
+                <h3>PERFIL</h3>
+            </div>
+        </a>
+
+        <a href="voluntari_sugereix.html">
+            <div class="botonesmenu">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Dimensions" width="30" height="30" viewBox="0 0 30 30"><defs><style>.cls-1{fill:currentColor;}</style></defs><path class="cls-1" d="M28.5,14h-11.5V1.5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5,1.5v12.5H1.5c-.83,0-1.5.67-1.5,1.5s.67,1.5,1.5,1.5h12.5v11.5c0,.83.67,1.5,1.5,1.5s1.5-.67,1.5-1.5v-11.5h11.5c.83,0,1.5-.67,1.5-1.5s-.67-1.5-1.5-1.5Z"/></svg>
+                <h3>SUGEREIX</h3>
+            </div>
+        </a>
+    </div>
+    
+    <div class="content">
+        <div class="mostra_perfil_entitat">
+            
+            <img class="foto_entitat" src="img/beautiful-volunteer-woman-posing-city-park.jpg">
+            <a class="ajust" href="voluntari_perfil_ajust.html">
+                <img src="img/ajust.svg" height="22">
+            </a>
+            <div class="voluntariat_proper">
+                <h2></h2>
+                
+            </div>
+
+        </div>
+    </div>
+
+
+        <!-- ESTO ES JAVASCRIPT PARA EL BUSCADOR -->
+        <script src="js/script.js"></script>
+</body>
+</html>
+

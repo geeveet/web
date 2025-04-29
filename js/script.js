@@ -1,4 +1,3 @@
-
 function mostrarResultados() {
 document.getElementById("searchResults").style.display = "block";
 }

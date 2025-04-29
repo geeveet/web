@@ -331,6 +331,22 @@ header input[type=text] {
   scroll-behavior: smooth;
 }
 
+.preferits::-webkit-scrollbar {
+  width: 8px; 
+  scroll-behavior: smooth;
+}
+.preferits::-webkit-scrollbar-track {
+  background: white; 
+  border-radius: 10px;
+  scroll-behavior: smooth;
+}
+
+.preferits::-webkit-scrollbar-thumb {
+  background: #E3EAF8; 
+  border-radius: 10px;
+  scroll-behavior: smooth;
+}
+
 .contingut_volun_proper{
   margin: 0px 30px 30px 30px;
 }
@@ -460,14 +476,9 @@ a {
   /* border-radius: 10px; */
   position: fixed;
   top: 69px;
-  left: 650px;
-  transform: translateX(-100%);
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  overflow-y: auto;
-  overflow-x: hidden;
-  pointer-events: none;
-  z-index: 1000;
+  z-index: 20000;
   text-align: center;
+  overflow: scroll;
 }
 
 .preferits img{
@@ -496,3 +507,8 @@ a {
   margin-left: 22px;
   margin-bottom: 6px;
 }
+
+.btn:hover {
+  background-color: #1E2F50;
+}
+
