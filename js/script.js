@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
+
   
   const botones = document.querySelectorAll('.botonesmenu');
 

@@ -336,6 +336,7 @@ header input[type=text] {
   background-color: #E3EAF8;
   border-radius: 10px;
   margin: 0 auto;
+  padding-bottom: 40px;
   box-shadow: 0px 10px 10px 1px rgba(0,0,0,0.1);
 }
 
@@ -376,6 +377,17 @@ header input[type=text] {
   border-radius: 10px;
 }
 
+.categoria_feed:hover{
+  width: 20%;
+  height: 45px;
+  background-color: white;
+  border-color: #1E2F50;
+  border-style: solid;
+  margin: 10px auto auto;
+  display:inline-block;
+  border-radius: 10px;
+}
+
 .categoria_feed p{
   font-size: 12px;
   line-height: 44px;
@@ -396,11 +408,9 @@ header input[type=text] {
 
 .geeveets_recomanat{
   margin-top: 20px;
-  height: 170px;
+  height: 164px;
   background-color: white;
   border-radius: 10px;
-  
-
 }
 
 .foto_recomanat{
@@ -408,10 +418,11 @@ header input[type=text] {
   width: 100%;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
+  filter: brightness(80%);
 }
 
 .geeveets_recomanat .desc_geeveet_rec{
-  font-size: 20px;
+  font-size: 17px;
   color: #1E2F50;
   font-family: "montserrat", sans-serif;
   font-weight: 500;
@@ -423,9 +434,15 @@ header input[type=text] {
 .geeveets_cajita{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px; 
+  gap: 14px; 
 }
 
 a {
   text-decoration: none;
 }
+
+.botonesmenu:active{
+  background-color: #1F2F50;
+  color: white;
+  fill: #ffffff;
+ }
