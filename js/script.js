@@ -32,11 +32,26 @@ document.addEventListener("DOMContentLoaded", function() {
   const botones = document.querySelectorAll('.botonesmenu');
 
 // Recorre cada botón y le agrega un evento de clic
-botones.forEach(boton => {
-  boton.addEventListener('click', () => {
-    // Elimina la clase 'active' de todos los botones
-    botones.forEach(b => b.classList.remove('active'));
-    // Añade 'active' solo al botón que fue clicado
-    boton.classList.add('active');
-  });
-});
+function closeVoluntariat(id) {
+  document.getElementById(id).style.display = 'none';
+}
+
+function mostrarVoluntariat(showId, hideId) {
+  document.getElementById(hideId).style.display = 'none';  // Ocultar el primero
+  document.getElementById(showId).style.display = 'block'; // Mostrar el segundo
+}
+
+
+
+function mostrarVoluntariat(idMostrar, idOcultar) {
+  var mostrarElemento = document.getElementById(idMostrar);
+  var ocultarElemento = document.getElementById(idOcultar);
+
+  // Mostrar el elemento con idMostrar y aplicar la animación
+  mostrarElemento.style.display = 'block';
+  mostrarElemento.classList.add('active');
+  
+  // Ocultar el elemento con idOcultar y quitar la clase active
+  ocultarElemento.classList.remove('active');
+  ocultarElemento.style.display = 'none';
+}

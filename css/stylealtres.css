@@ -285,7 +285,6 @@ header input[type=text] {
 
 .categoria{
   width: 150px;
-  height: 25px;
   background-color: white;
   border-color: #1E2F50;
   border-style: solid;
@@ -341,6 +340,13 @@ header input[type=text] {
 }
 
 .mostra_perfil_entitat .foto_entitat{
+  height: 250px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.mostra_perfil_entitat .foto_entitat_ajust{
   height: 250px;
   width: 100%;
   border-radius: 10px 10px 0 0;
@@ -421,6 +427,10 @@ header input[type=text] {
   filter: brightness(80%);
 }
 
+.foto_entitat_ajust{
+  filter: brightness(80%);
+}
+
 .geeveets_recomanat .desc_geeveet_rec{
   font-size: 17px;
   color: #1E2F50;
@@ -452,4 +462,189 @@ a {
   margin-top: 15px;
   margin-left: -40px;
   z-index: 50;
+}
+
+.categoria_ajust{
+  height: 40px;
+  width: 150px;
+  background-color: white;
+  border-color: #1E2F50;
+  border-style: solid;
+  margin: 10px auto auto;
+  display:inline-block;
+  border-radius: 10px;
+}
+
+
+
+.categoria_perfil{
+  width: 150px;
+  height: 45px;
+  background-color: #1E2F50;
+  border-color: #1E2F50;
+  border-style: solid;
+  margin: 10px auto auto;
+  display: inline-block;
+  border-radius: 19px;
+}
+
+
+.categoria_perfil p{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: center;
+  margin: 0px auto;
+  font-weight: bold;
+  color: white;
+}
+
+
+.questionari_voluntari_crea{
+  margin: 0 auto; /* Esto ya lo tienes, ayuda a centrar si hay un ancho definido */
+  display: flex;
+  gap: 34px;
+  justify-content: center; /* <-- Esto es lo que necesitas para centrar los hijos */
+  width: fit-content; /
+}
+
+.questionari_voluntari_crea h2{
+  text-align: left;
+  margin: 18px  0 auto 18px;
+  font-family: "montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 17px;
+  color: #1E2F50;
+}
+
+.questionari_voluntari_crea h2{
+  text-align: left;
+  margin: 18px  0 auto 18px;
+  font-family: "montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 17px;
+  color: #1E2F50;
+}
+
+.formulario_voluntario_pregunta p {
+  margin: 12px 10px 0 20px;
+  opacity: 60%;
+  color: #B5B5B5;
+}
+
+.formulario_voluntario_pregunta {
+  width: 355px;
+  height: 50px;
+  background-color: #fff;
+  margin: 6px auto;
+  border-radius: 15px;
+  display: flex;
+  border-color: #1E2F50;
+  border-style: solid;
+}
+
+.formulario_voluntario_foto {
+  width: 355px;
+  height: 180px;
+  background-color: #fff;
+  margin: 6px 0px 18px 0px;
+  border-radius: 15px;
+  fill: #1E2F50;
+  display: flex;
+  border-color: #1E2F50;
+  border-style: solid;
+}
+
+.categoria_ajust h5 {
+  font-size: 12px;
+  line-height: 9px;
+  text-align: center;
+  font-family: "montserrat", sans-serif;
+  margin: 16px auto;
+  font-weight: bold;
+}
+
+
+
+.categoria h5 {
+  font-size: 12px;
+  line-height: 10px;
+  text-align: center;
+  font-family: "montserrat", sans-serif;
+  margin: 16px auto;
+  font-weight: bold;
+}
+
+.formulario_voluntario_foto svg {
+  margin: 15px 20px;
+  fill: #1E2F50;
+}
+
+.voluntariat_proper{
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+}
+
+.contenidor_categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  max-width: 355px;
+}
+
+.textarea_motivo {
+  min-height: 100px;
+  width: 100%;
+  line-height: 1.5;
+}
+
+.boton_guardar {
+  margin: 20px auto 0 auto; /* Centra horizontalmente */
+  padding: 10px 20px;
+  background-color: #1E2F50;
+  color: white;
+  max-width: 20%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.boton_guardar H5{
+  font-size: 12px;
+  line-height: 8px;
+  text-align: center;
+  font-family: "montserrat", sans-serif;
+  margin: 16px auto;
+  font-weight: bold;
+  color: white;
+}
+
+.subtitol_feed{
+  font-size: 20px;
+  color: #1E2F50;
+  font-family: "montserrat", sans-serif;
+  font-weight: 400;
+  margin-top: 20px;
+  font-style: normal;
+  text-align: center;
+}
+
+.cosaentitat{
+  margin: 10px 60px 120px 60px;
+}
+
+.geeveets_cajita_custom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  justify-items: center;
+}
+
+.geeveets_cajita_custom img {
+  max-width: 300px;
+  width: 100%;
+  margin-top: 10px;
+  height: auto;
+  display: block;
 }
