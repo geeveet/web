@@ -642,9 +642,31 @@ a {
 }
 
 .geeveets_cajita_custom img {
-  max-width: 300px;
+  max-width: 440PX;
   width: 100%;
   margin-top: 10px;
   height: auto;
   display: block;
+}
+
+.bibibi{
+  max-width: 40%;
+}
+
+.buscador_aforament {
+  color: #1E2F50;
+  align-items: center;
+  text-align: center;
+  font-family: "montserrat", sans-serif;
+  font-weight: 400;   
+  white-space: nowrap;
+}
+
+.icon_aforo {
+  width: 18px;
+  height: 18px;
+}
+
+.ultimillo{
+  margin-bottom: 70px;
 }
