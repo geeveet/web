@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INICI WEB</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylealtres.css">
 
     <!-- FONTS UTILITZADES -->
 
@@ -20,16 +20,11 @@
 
 <body>
 
-    <a href="paginaprincipal_entitat.html"><img class="givit one" src="img/geeveet_isotipo.svg" data-id="1"></a>
-    <a href="paginaprincipal_entitat.html"><img class="givit two" src="img/geeveet_isotipo.svg" data-id="2"></a>
-    <a href="paginaprincipal_entitat.html"><img class="givit three" src="img/geeveet_isotipo.svg" data-id="3"></a>
-    <a href="paginaprincipal_entitat.html"><img class="givit four" src="img/geeveet_isotipo.svg" data-id="4"></a>
-
-
     <header>
         <a href="paginaprincipal_entitat.html"><img class="logo" src="img/logo_geeveet.png"></a>  
     
         <div class="search-container">
+            
             <input type="text" id="searchBox" placeholder="Buscar..." onclick="mostrarResultados()">
             <div class="search-results" id="searchResults">
                 <a href=""><p>Fes companyia a gent gran</p></a>
@@ -39,6 +34,7 @@
                 <a href=""><p>Acompanya a gent amb discapacitat</p></a>
             </div>
         </div>
+    
     </header>
 
     <div class="barramenu">
@@ -50,7 +46,7 @@
         </a>
 
         <a href="e_notificacions.html">
-            <div class="botonesmenu active">
+            <div class="botonesmenu">
                 <svg xmlns="http://www.w3.org/2000/svg" id="Dimensions" width="29.92" height="30" viewBox="0 0 29.92 30"><defs><style>.cls-1{fill:currentColor;fill-rule:evenodd;}</style></defs><path id="Trazado_740" class="cls-1" d="M28.1,26.24h-9.4c0,2.08-1.68,3.76-3.76,3.76s-3.76-1.68-3.76-3.76H1.78c-.79-.02-1.48-.55-1.7-1.31-.22-.74,0-1.54.57-2.06,1.89-1.41,3-3.63,3.01-5.98v-5.61C3.66,5.05,8.71,0,14.94,0c6.23,0,11.28,5.05,11.28,11.28v5.61c0,2.36,1.12,4.57,3.01,5.98.63.48.86,1.32.56,2.06-.22.76-.9,1.29-1.69,1.31Z"/></svg>
                 <h3>NOTIFICACIONS</h3>
             </div>
@@ -70,30 +66,84 @@
             </div>
         </a>
     </div>
-
+    
     <div class="content">
-        <div class="preferits">
-            <a href="paginaprincipal_entitat.html">
-                <div class="close-btn">X</div>
-            </a>
+        <div class="mostra_perfil_entitat">
 
-            <h2 class="titol_apartat">NOTIFICACIONS</h2>
+            <img class="foto_entitat" src="img/pexels-katetrysh-4090012.jpg">
 
-            <img class="imagen_preferit" src="img/noti_entitat1.jpg">
-            <img class="imagen_preferit" src="img/noti_entitat2.jpg">
-            <img class="imagen_preferit" src="img/noti_entitat3.jpg">
-            <img class="imagen_preferit" src="img/noti_entitat4.jpg">
-            <img class="imagen_preferit" src="img/noti_entitat5.jpg">
-            <img class="imagen_preferit" src="img/noti_entitat6.jpg">
-            <img class="imagen_preferit" src="img/noti_entitat7.jpg">
-            <img class="imagen_preferit" src="img/noti_entitat8.jpg">
-            <img class="imagen_preferit" src="img/noti_entitat9.jpg">
-            <img class="imagen_preferit" src="img/noti_entitat1.jpg">
-            <img class="imagen_preferit" src="img/noti_entitat2.jpg">
-            <img class="imagen_preferit" src="img/noti_entitat3.jpg">
+            <div class="voluntariat_proper">
+                <div class="contingut_volun_proper cosaentitat">
+                    
+                    <p class="nom_entitat">Acompanya a la gent gran</p>
+                    <p class="nom_entitat"><u>VOLUNTARIAT D'ACCIÓ SOCIOEDUCATIVA</u></p>
+                    
+                    <p class="sub_data">Plaçes: 30/50
+                    <br>Dia: 00/00 a las 00:00
+                    </p>
+    
+                    <p class="titol_volu">Descripció Voluntariat
+                    </p>
+    
+                    <p class="desc_volu">T’agradaria marcar una diferència en la vida de la gent gran? Uneix-te al nostre programa de voluntariat d’acompanyament i ofereix el teu temps, carinyo i companyia a qui més ho necessiti.
+                    </p>
+    
+                    <p class="titol_volu">Requisits
+                    </p>
+    
+                    <p class="desc_volu">Per a participar, cal ser major de 18 anys. És imprescindible la capacitat d’escoltar, comprendre les necessitats de les persones grans I oferir-los un acompanyament respectuós. Es valora especialment la sensibilitat, l’empatia i el compromís per garantir un suport afectuós i de qualitat.
+                    </p>
+    
+                    <p class="titol_volu">Valoració
+                    </p>
+                    <img class="foto_valoracio" src="img/Grupo 1688.png" alt="">
+    
+                    <p class="titol_volu">Punts positius
+                    </p>
+    
+                    <div class="puntspositius">
+                        <div class="categoria">
+                            <p>PUNTUALITAT</p>
+                        </div>
+                        <div class="categoria">
+                            <p>BON TRACTE</p>
+                        </div>
+                        <div class="categoria">
+                            <p>BONA ATENCIÓ</p>
+                        </div>
+                        <div class="categoria">
+                            <p>ORGANITZAT</p>
+                        </div>
+                    </div>
+
+                    
+                    
+    
+                    <a href="paginaprincipal.html">
+                        <div class="inscribir primero">
+                            <p>EDITAR GEEVEET</p>
+                        </div>
+                    </a>
+                    <a href="paginaprincipal.html">
+                        <div class="inscribir">
+                            <p>ELIMINAR GEEVEET DEL GEEVEET</p>
+                        </div>
+                    </a>
+                    <a href="e_usuaris_inscrits.html">
+                        <div class="inscribir">
+                            <p>VEURE USUARIS INSCRITS</p>
+                        </div>
+                    </a>
+               
+               
+                </div>
+                
+            </div>
 
         </div>
     </div>
+
+    
 
 <script src="js/script.js"></script>
 </body>
